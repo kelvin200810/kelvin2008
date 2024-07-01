@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>대전과학고등학교 자동 점호 관리시스템</h1>
+    <h2>이론적 배경</h2>
+    <h3>가. 체크 점호의 불편함</h3>
+    - 우리 학교는 기숙사 학교로, 매일 아침 7시부터 7시 40분까지 사감실 앞에서 체크점호를 실시함.</br>
+    - 해당 시간 안에 점호판에 자석을 붙이지 않으면 벌점이 부여되는데, 체크점호를 연속으로 하지 않아 벌점이 부여되는 경우가 많다. 또한 사감실 앞을 어쩔 수 없이 거쳐가야 한다.</br>
+    - 점호 체크는 ‘학생의 현황 파악’의 목적이 크기 때문에 해당 목적을 만족시킬 수 있는 방법을 생각해 보았다.</br>
+    <h3>나. 체크 점호가 없으면 생기는 일</h3>
+    - 학생의 생존(?) 여부를 확인 불가 (돌연사 발생 가능)</br>
+    - 학교를 탈출하여 무단 외출 (이경우 선도위원회 회부)</br>
+    - 학생의 건강 상태를 파악 불가</br>
+    - 학생들을 깨우기 어려움</br>
+    </br>
+    <h2>제작 과정</h2>
+    <h3>가. 앱 디자인</h3>
+    -Thunkable을 활용하여 화면을 구성한다.</br>
+    -스크린 1은 로그인 창, 스크린 2는 홈 화면 창, 스크린 3은 이용안내 창, 스크린 4는 학생증 인증 창, 스크린 5는 교실 점호 창, 스크린 6은 사진 업로드 창으로 구성하였다.</br>
+    <h3>나. 코딩</h3>
+    -로그인 창은 아이디, 비밀번호가 맞지 않으면 에러창이 뜨고, 맞으면 홈 화면으로 넘어가도록 하였다.</br>
+    -홈 화면 창은 사용자 정보가 표시되도록 하였고, 이용안내, 학생증 인증, 번역, 교실 점호 등의 메뉴로 들어갈 수 있도록 하였다.</br>
+    -이용안내 창은 어플에 대한 간단한 설명이 나오도록 하였다.</br>
+    -번역 창은 한국어, 영어, 중국어, 일본어로 번역이 가능하고록 하였다.</br>
+    -학생증 인증 창은 '인증하기' 버튼을 누르면 인증할 수 있는 창이 뜨도록 하였다.</br>
+    -교실 점호 창은 '교실 점호' 버튼을 누르면 네트워크에 연결되었는지 확인한 후 '점호 성공' 또는 '점호 실패'가 뜨도록 하였다.</br>
+    -사진 업로드 창은 학생증을 업로드할 수 있도록 하였다.</br>
+    -학생증 인증 결과 및 교실 점호 결과는 메일을 통해 전송되도록 하였다.</br>      
+    -자세한 것은 발표를 참고하면 된다.</br>     
+    <h2>시스템 이용방법</h2>
+    1. 로그인: 아이디, 비밀번호로 로그인, 아이디 또는 비밀번호가 잘못되면 알림 발생</br>
+    현재 ID와 비밀번호는 각각 학번을 입력하면 됨. 예시: 학번이 2104일 경우 ID는 2104, 비번은 2104</br>
+    2. 홈 화면: 사용자 정보 표시, 이용안내, 학생증 인증, 교내 점호, 번역 이용 가능</br>
+    3. 학생증 인증: 대전과학고 학생 확인을 위해 학생증 촬영 후 제출</br>
+    4. 교내 점호: 학교 교실의 와이파이에 연결된 상태에서 버튼을 누르면 점호 체크 완료, 연결이 안된 상태에서 누르면 점호 실패</br>
+    점호 결과는 메일로 전송됨(현재 40th66@djshs.djsch.kr로 받고 있음)</br>
+    현재 2학년 1반 학생 중 안드로이드 기기 유저 대상으로 시험 운영 중</br>
+    5. 주의: 기능만 구현했을 뿐 실제로 사용하는 시스템이 아님</br>
+    <h2>결론</h2>
+    1. 프로세싱을 이용하여 자동 점호 시스템과 기존 방식을 비교해본 결과, 
+    점호 실시율이 자동점호시스템 96%, 기존 방식 68%로 예측됨</br>
+    2. 이는 학생은 랜덤하게 움직인다는 가정 하에 제작함
+    <h3>자세한 내용 및 사진은 발표를 참고바람</h3>
+    <h2><a href="http://url5821.thunkable.com/ls/click?upn=u001.nmyw1dOD6UCUTHTeIWJDCwtXbP3Lw-2BB1SgLdOqe-2FYGS2vEWv5W-2FGmjt77ym6UDP6z6SnDqmMe-2FWX55F5ydcRuGW-2BqOuRYD22XyxPkt4l6tmC49YD1ViU0re1BiVkVwMLTrG-2BNWeKLYTRCYnrunUiFn0aTygJSs0vnyOpfU1W7BwcPBaJvPvYksS8iLuAorA0TFILdsrujoa2HvJKhCE6k6Xi8UXb1zaQtra6XTG57utjwJIi0fS657wYdrVQxanKY-2FDHLdOJ5mU804sj91Ukkg-3D-3DNwPT_u6Wd9Hc7K-2F4-2Bv6WvuwzNJVKh1pZUqv8P5sBoiVM35Npr-2BB2U3EDYyx4gacQoKy9ibmkZAYVBjyTZfVegxz1WkyK2PNpI-2B6hzRbni-2FBu71oCX7zo4d2FUBUOnsUv-2BqS1XIwFsLCGY18cpiTh2HmfWfmXddYQedhrxCN-2BdiZjY1xltkj48jxt3PlTh3-2FDG5S7jxTPorlKsATbCw3iZnHIlMkMMHrayjq4CIZ0hzlFn1ThRNhNhQOR7aIVHDcVaj1PniOZnNwqRot9uws3ifTEPv79rlWM-2Fa07vUTPkCN6c8tz3vnjRMelOk8B25tB8dGJTwELWnAksjQ-2F6G7FDSDRvM1PwRr7cLiyWuLFeFb3L71A-3D">앱 설치 링크(안드로이드만 지원, 다운받고 설치)</a></h2> 
+</body>
+</html>
